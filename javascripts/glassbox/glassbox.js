@@ -711,8 +711,8 @@ function GETrequest( url, target_id, callback_id ) {
 */
 function getScreenDimensions (){
   if (window.innerHeight) {
-    screenWidth = window.innerWidth;
-    screenHeight = window.innerHeight;
+    screenWidth = window.pageXOffset;
+    screenHeight = window.pageYOffset;
   } 
   else if ( document.documentElement.clientHeight ) {
     screenWidth = document.documentElement.clientWidth;
